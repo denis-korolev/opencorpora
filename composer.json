@@ -1,0 +1,53 @@
+{
+  "name": "denis-korolev/opencorpora",
+  "description": "Library to serialize opencorpora export file data from xml to objects",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Denis Korolev",
+      "email": "dinya17@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    }
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-dom": "*",
+    "ext-simplexml": "*",
+    "jms/serializer": "^3.17",
+    "symfony/cache": "^5.4"
+  },
+  "require-dev": {
+    "overtrue/phplint": "^2.0",
+    "phpunit/phpunit": "^9.2",
+    "roave/security-advisories": "dev-master",
+    "squizlabs/php_codesniffer": "^3.5",
+    "vimeo/psalm": "^3.8",
+    "ext-xmlreader": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Opencorpora\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "lint": "phplint",
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "psalm": "psalm",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-html var/test/coverage"
+  }
+}
