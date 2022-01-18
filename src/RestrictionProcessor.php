@@ -7,7 +7,7 @@ namespace Opencorpora;
 use JMS\Serializer\SerializerInterface;
 use Opencorpora\Dictionary\Restrictions\Restr;
 
-class RestrictionProcessor extends OpencorporaSerializer
+class RestrictionProcessor extends ExportFileReader
 {
     private SerializerInterface $serializer;
 

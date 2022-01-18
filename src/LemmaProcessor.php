@@ -7,7 +7,7 @@ namespace Opencorpora;
 use JMS\Serializer\SerializerInterface;
 use Opencorpora\Dictionary\Lemmata\Lemma;
 
-class LemmaProcessor extends OpencorporaSerializer
+class LemmaProcessor extends ExportFileReader
 {
     private SerializerInterface $serializer;
 

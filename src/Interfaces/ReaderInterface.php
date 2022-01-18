@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Opencorpora\Interfaces;
 
-interface OpencorporaSerializerInterface
+interface ReaderInterface
 {
     /**
      * @param string $filePath

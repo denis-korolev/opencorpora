@@ -7,7 +7,7 @@ namespace Opencorpora;
 use JMS\Serializer\SerializerInterface;
 use Opencorpora\Dictionary\Links\Link;
 
-class LinksProcessor extends OpencorporaSerializer
+class LinksProcessor extends ExportFileReader
 {
     private SerializerInterface $serializer;
 

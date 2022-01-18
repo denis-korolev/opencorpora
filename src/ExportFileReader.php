@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Opencorpora;
 
 use Opencorpora\Exceptions\OpencorporaException;
-use Opencorpora\Interfaces\OpencorporaSerializerInterface;
+use Opencorpora\Interfaces\ReaderInterface;
 
-abstract class OpencorporaSerializer implements OpencorporaSerializerInterface
+abstract class ExportFileReader implements ReaderInterface
 {
     public function getData(string $filePath): \Generator
     {

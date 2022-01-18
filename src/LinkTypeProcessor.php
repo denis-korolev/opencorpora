@@ -7,7 +7,7 @@ namespace Opencorpora;
 use JMS\Serializer\SerializerInterface;
 use Opencorpora\Dictionary\Links\LinkType;
 
-class LinkTypeProcessor extends OpencorporaSerializer
+class LinkTypeProcessor extends ExportFileReader
 {
     private SerializerInterface $serializer;
 

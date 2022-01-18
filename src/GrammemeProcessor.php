@@ -7,7 +7,7 @@ namespace Opencorpora;
 use JMS\Serializer\SerializerInterface;
 use Opencorpora\Dictionary\Grammeme;
 
-class GrammemeProcessor extends OpencorporaSerializer
+class GrammemeProcessor extends ExportFileReader
 {
     private SerializerInterface $serializer;
 
