@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-  -   uses: shivammathur/setup-php@v2
+      - uses: shivammathur/setup-php@v2
         with:
           # this is the only place we have to use PHP to avoid the lock to bash scripting
           php-version: 7.4
