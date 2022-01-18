@@ -9,12 +9,14 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        php-versions: ['7.4']
 
     steps:
       - uses: actions/checkout@v2
+
+  -   uses: shivammathur/setup-php@v2
+        with:
+          # this is the only place we have to use PHP to avoid the lock to bash scripting
+          php-version: 7.4
 
       - name: Validate composer.json and composer.lock
         run: composer validate
